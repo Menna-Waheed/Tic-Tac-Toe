@@ -10,8 +10,8 @@ class AppStyle{
     fontWeight: FontWeight.w500,
   );
 
-  static const TextStyle semiBold32white=TextStyle(
-    color:AppColor.whiteColor ,
+  static const TextStyle semiBold32black=TextStyle(
+    color:AppColor.blackColor ,
     fontSize: 32,
     fontWeight: FontWeight.w700,
   );

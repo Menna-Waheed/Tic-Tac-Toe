@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:x_o/core/app_route.dart';
-import 'package:x_o/home/home_screen.dart';
+import 'package:x_o/home/home_screen/home_screen.dart';
 import 'package:x_o/home/player_screen.dart';
 
 void main(){
