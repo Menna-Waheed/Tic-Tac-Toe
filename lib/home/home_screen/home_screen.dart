@@ -4,6 +4,7 @@ import 'package:x_o/core/app_color.dart';
 import 'package:x_o/core/app_route.dart';
 import 'package:x_o/core/app_style.dart';
 import 'package:x_o/home/home_screen/widget/x_or_o.dart';
+import 'package:x_o/model/player_data.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -18,6 +19,7 @@ class HomeScreen extends StatelessWidget {
       ),
       child: SafeArea(
         child: Scaffold(
+
           backgroundColor: Colors.transparent,
           body:Padding(
             padding:  EdgeInsets.symmetric(horizontal: 20,
@@ -31,12 +33,13 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     InkWell(
                         onTap: () {
-                          Navigator.of(context).pushNamed(AppRoute.playerScreen);
+                          Navigator.of(context).pushNamed(AppRoute.playerScreen,
+                              arguments:PlayerData(player1: 'x',player2:'o' ) );
                         },
                         child: XOrO(symbol: AppAsset.x,)),
                     InkWell(
                         onTap: () {
-                          Navigator.of(context).pushNamed(AppRoute.playerScreen);
+                          Navigator.of(context).pushNamed(AppRoute.playerScreen,arguments:PlayerData(player1: 'o',player2:'x' ));
                         },
                         child: XOrO(symbol: AppAsset.o))
 
